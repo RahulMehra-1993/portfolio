@@ -1,0 +1,12 @@
+<div class="min-h-screen bg-gray-50">
+  <p-menubar [model]="items">
+    <ng-template pTemplate="end">
+      <button pButton label="Logout" icon="pi pi-power-off" (click)="logout()" class="p-button-danger"></button>
+    </ng-template>
+  </p-menubar>
+  
+  <div class="p-4">
+    <h1 class="text-4xl font-bold mb-4">Welcome to Dashboard</h1>
+    <p class="mb-4">This is a protected route. You can only see this if you're logged in.</p>
+  </div>
+</div>
